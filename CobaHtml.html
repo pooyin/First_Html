@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Testing Page</title>
+    <style>
+      .top {
+        border: 2px solid whitesmoke;
+
+        /* color: rgb(179, 54, 91); */
+        background: linear-gradient(
+          to right,
+          rgb(166, 36, 90),
+          rgb(255, 123, 173)
+        );
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+
+        margin-top: 10px;
+        /* scroll-margin-left: 10px; */
+        text-align: center;
+        padding: 10px;
+        border-radius: 10px;
+        font-family: "Trebuchet MS";
+      }
+
+      .profile {
+        alt: "Pauline";
+        width: 142px;
+        height: 142px;
+        float: left;
+        margin-right: 10px;
+        border-radius: 50%;
+      }
+
+      .wrapper {
+        display: flex; /* Menyusun anak-anaknya (gambar dan teks) dalam satu baris */
+        align-items: center; /* Menyelaraskan teks agar sejajar secara vertikal dengan gambar */
+        /* padding: 30px; Memberi ruang di dalam kontainer */
+      }
+
+      .background {
+        background-color: pink;
+      }
+
+      .center {
+        margin: auto;
+        width: max-content;
+        /* border: 2px solid palevioletred; */
+        /* padding: 1px; */
+      }
+    </style>
+  </head>
+
+  <body class="background">
+    <!-- header -->
+    <div class="center">
+      <h1 class="top" title="This is comment">Profile</h1>
+    </div>
+
+    <!-- profile -->
+    <div style="margin-left: 10px; margin-left: 10px">
+      <div class="wrapper">
+        <img class="profile" title="me" src="Image/cute rabbit.jpg.avif" />
+        <div style="font-family: lucida; flex-direction: column">
+          <p>Nama : Pauline</p>
+          <p>Pendidikan : S1</p>
+          <p>Asal : Yogyakarta</p>
+          <p>Umur : 20 tahun</p>
+        </div>
+      </div>
+
+      <!-- isi -->
+      <div style="clear: both"></div>
+      <!-- untuk menghilangkan float dari style sebelumnya -->
+      <p>
+        Shortcut: <br />
+        .div$*4 = untuk bikin div class=div1 sampai div4
+      </p>
+
+      <!-- Tag <search> adalah elemen semantik HTML5 yang
+        digunakan untuk menandai area pencarian dalam sebuah halaman web. -->
+      <search> Search bar </search>
+
+      <!-- href = Link -->
+      <!-- _blank = Dibuka di tab baru -->
+      <button
+        style="
+          font-family: 'Trebuchet MS';
+          font-size: large;
+          padding: 10px;
+          border-radius: 30%;
+          /* background-color: white; */
+          background: linear-gradient(to top, pink, palevioletred);
+        "
+      >
+        <b>
+          <!-- Bold  -->
+          <a
+            href="https://www.w3schools.com/html/html_basic.asp"
+            target="_blank"
+          >
+            Tutorial here</a
+          >
+        </b>
+      </button>
+    </div>
+
+    <!-- <span class="js"></span> -->
+  </body>
+</html>
