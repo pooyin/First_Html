@@ -2,6 +2,7 @@
 <html>
   <head>
     <title>Testing Page</title>
+    <link rel="icon" type="image/x-icon" href="Image/cute rabbit.jpg.avif" />
     <style>
       .top {
         border: 2px solid whitesmoke;
@@ -21,6 +22,8 @@
         padding: 10px;
         border-radius: 10px;
         font-family: "Trebuchet MS";
+        vertical-align: top;
+        /* meratakan top */
       }
 
       .profile {
@@ -61,7 +64,7 @@
         border-color: azure;
         /* border: none; */
         cursor: pointer;
-        transition: background-color 0.5s, color 0.5s;
+        transition: background-color 0.5s, color 0.5s, padding 0.5s;
         box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
         /* rgba = color with opacity
         box shadow = x, y, opacity */
@@ -72,6 +75,8 @@
         background: none;
         background-color: rgb(108, 32, 67);
         color: rgb(255, 209, 238);
+        padding: 15px;
+        box-shadow: none;
         opacity: 0.8;
       }
 
@@ -80,7 +85,7 @@
         color: palevioletred;
       }
 
-      .link:hover {
+      .url:hover {
         color: palevioletred;
         opacity: 0.6;
       }
@@ -94,7 +99,7 @@
     </div>
 
     <!-- profile -->
-    <div style="margin-left: 10px; margin-left: 10px">
+    <div style="margin-left: 10px; margin-right: 10px">
       <div class="wrapper">
         <img class="profile" title="me" src="Image/cute rabbit.jpg.avif" />
         <div style="font-family: lucida; flex-direction: column">
@@ -113,28 +118,37 @@
         .div$*4 = untuk bikin div class=div1 sampai div4
       </p>
 
-      <!-- Tag <search> adalah elemen semantik HTML5 yang
+      <div>
+        <pre>preformatted</pre>
+        <sub>subscripted</sub>
+        <sup>superscripted</sup>
+        <em>emphasized</em>
+        <i>italic</i>
+        <strong>strong</strong>
+        <b>bold</b>
+        <del></del>
+        <ins>insert</ins>
+        <mark>mark</mark>
+      </div>
+
+      <!-- Tag <search> adalah elemen semantik HTML yang
         digunakan untuk menandai area pencarian dalam sebuah halaman web. -->
       <search> Search bar </search>
 
       <!-- href = Link -->
       <!-- _blank = Dibuka di tab baru -->
-      <button>
-        <b>
-          <!-- Bold  -->
-          <a
-            class="link"
-            href="https://www.w3schools.com/html/html_basic.asp"
-            target="_blank"
-          >
-            Tutorial here</a
-          >
-          Testing
-        </b>
-      </button>
+      <!-- onclick="https://www.w3schools.com/html/html_links.asp" -->
+      <button><b>Testing</b></button>
       <br />
+      <!-- Bold  -->
+      <a class="url" href="https://wa.me/6281915425959" target="_blank">
+        <img
+          src="Image/WhatsApp.svg.png"
+          width="50px"
+          height="50px"
+          href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FFile%3AWhatsApp.svg&psig=AOvVaw1leT566KplywS-MTBbcKkV&ust=1752244947763000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCOjqq6TDso4DFQAAAAAdAAAAABAE"
+        />
+      </a>
     </div>
-
-    <!-- <span class="js"></span> -->
   </body>
 </html>
