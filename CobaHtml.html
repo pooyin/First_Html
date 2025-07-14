@@ -131,6 +131,25 @@
         <mark>mark</mark>
       </div>
 
+      <div>
+        <!-- JavaScript -->
+        <button onclick="action(0)">Change to JS</button>
+        <button onclick="action(1)">Change to default</button>
+        <p id="default">This is the default</p>
+        <script>
+          // while (true) {
+          // }
+          function action(active) {
+            if (active == 0) {
+              sentence = "This is JS";
+            } else {
+              sentence = "This is default";
+            }
+            document.getElementById("default").innerHTML = sentence;
+          }
+        </script>
+      </div>
+
       <!-- Tag <search> adalah elemen semantik HTML yang
         digunakan untuk menandai area pencarian dalam sebuah halaman web. -->
       <search> Search bar </search>
